@@ -13,6 +13,7 @@
     "faker": "^4.1.0",
     "http-errors": "^1.7.1",
     "jade": "~1.11.0",
+    "mongoose": "^5.4.5",
     "morgan": "~1.9.0",
     "truffle-contract": "^4.0.2",
     "truffle-hdwallet-provider": "^1.0.2",
