@@ -67,6 +67,49 @@ console.log(str);
   // res.end("yes");
 });
 
+router.get('/start/:id',function(req,res){
+  // var user_name=req.body.ui;
+  var user_name = req.params.id
+
+console.log(user_name)
+
+str = JSON.stringify(req.body);
+str = JSON.stringify(req.body, null, 4); // (Optional) beautiful indented output.
+console.log(str);
+  if(user_name ){
+
+    console.log(user_name)
+    //  user_name=req.tempBody.userid;
+     voter.findById(user_name, function (err, voter) {
+      campaign.findOne({ name: voter.region }, function (err, location) {
+          var str = "";
+          var int = 1;
+          location.candidates.map(e=>{
+  
+              console.log(e.party.abb)
+              str = str + int+"-"
+              str = str + e.party.abb
+              str = str + " "
+  
+              int++;
+          })
+      console.log(str )
+          // str = "correct stringyes"
+      res.send(str);
+    });
+        // console.log(voter.region)
+        // console.log("iuchniu")
+    });
+  } else{
+    res.send("incorrect post request")
+  }
+  // var password=req.body.password;
+  console.log("User name = "+user_name+", password is ");
+
+  // console.log("User name = "+user_name+", password is "+password);
+  // res.end("yes");
+});
+
 
 
 router.post('/vote',function(req,res){
