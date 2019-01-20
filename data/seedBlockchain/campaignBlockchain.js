@@ -6,7 +6,7 @@ campaign.find({}, function(err, allcampaigns) {
 
 
 
-
+        console.log(campaignInstance)
        // Use native JSON.stringify method. Works with nested objects and all major browsers support this method.
 
         // str = JSON.stringify(campaignInstance);
