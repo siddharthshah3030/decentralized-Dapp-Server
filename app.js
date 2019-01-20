@@ -16,6 +16,7 @@ app.set('view engine', 'ejs');
 var results = require('./data/result');
 var mainData = require('./data/main');
 
+userid = "5c4244d5b1a3cc0e3c904cec"
 
 app.use(logger('dev'));
 app.use(express.json());
