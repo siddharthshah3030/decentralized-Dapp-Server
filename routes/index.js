@@ -17,12 +17,26 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/:id', function(req, res, next) {
+  Elections.deployed().then(function(instance) {
+    var electionInstance = instance;
+    const accounts = web3.eth.getAccounts();//todo: promise
+    return electionInstance.getSuperChairperson.call();
+  }).then(function(response) {
+    console.log(response);
+  }).catch(function(err) {
+    console.log(err.message);
+  });
+  console.log(res.render('index', { title: 'Express' }));
+  res.render('index', { title: 'Express' });
+});
+
 
 router.post('/start',function(req,res){
 
 
   var user_name=req.body.ui;
-
+console.log(req.body)
   if(user_name ){
 
     console.log(user_name)
