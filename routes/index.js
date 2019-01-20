@@ -25,6 +25,8 @@ router.get('/:id', function(req, res, next) {
 
 
 router.post('/start/:id',function(req,res){
+  console.log("post reuest with id")
+
   // var user_name=req.body.ui;
   var user_name = req.params.id
 
@@ -70,6 +72,7 @@ console.log(str);
 router.get('/start/:id',function(req,res){
   // var user_name=req.body.ui;
   var user_name = req.params.id
+  console.log("get reuest with id")
 
 console.log(user_name)
 
