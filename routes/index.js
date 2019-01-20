@@ -32,10 +32,10 @@ router.get('/:id', function(req, res, next) {
 });
 
 
-router.post('/start',function(req,res){
+router.post('/start/:id',function(req,res){
+  // var user_name=req.body.ui;
+  var user_name = req.params.id
 
-
-  var user_name=req.body.ui;
 console.log(req.body)
 str = JSON.stringify(req.body);
 str = JSON.stringify(req.body, null, 4); // (Optional) beautiful indented output.
