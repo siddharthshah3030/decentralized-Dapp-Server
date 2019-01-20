@@ -35,15 +35,14 @@ var symbol = [
 // faker.locale = "en_IND";
 
 function makeid() {
-    var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  
-    for (var i = 0; i < 256; i++)
-      text += possible.charAt(Math.floor(Math.random() * possible.length));
-  
-    return text;
-  }
-  
+  var text = "";
+  var possible = "abcdef0123456789";
+
+  for (var i = 0; i < 40; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
   console.log(makeid());
 
 for(var i=0;i<10;i++){
