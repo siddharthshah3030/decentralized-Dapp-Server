@@ -22,28 +22,34 @@ router.post('/start',function(req,res){
 
 
   var user_name=req.body.ui;
-  console.log(user_name)
-  //  user_name=req.tempBody.userid;
-   voter.findById(user_name, function (err, voter) {
-    campaign.findOne({ name: voter.region }, function (err, location) {
-        var str = "";
-        var int = 1;
-        location.candidates.map(e=>{
 
-            console.log(e.party.abb)
-            str = str + int+"-"
-            str = str + e.party.abb
-            str = str + " "
+  if(user_name ){
 
-            int++;
-        })
-    console.log(str )
-        // str = "correct stringyes"
-    res.send(str);
-});
-    // console.log(voter.region)
-    // console.log("iuchniu")
-});
+    console.log(user_name)
+    //  user_name=req.tempBody.userid;
+     voter.findById(user_name, function (err, voter) {
+      campaign.findOne({ name: voter.region }, function (err, location) {
+          var str = "";
+          var int = 1;
+          location.candidates.map(e=>{
+  
+              console.log(e.party.abb)
+              str = str + int+"-"
+              str = str + e.party.abb
+              str = str + " "
+  
+              int++;
+          })
+      console.log(str )
+          // str = "correct stringyes"
+      res.send(str);
+    });
+        // console.log(voter.region)
+        // console.log("iuchniu")
+    });
+  } else{
+    res.send("incorrect post request")
+  }
   // var password=req.body.password;
   console.log("User name = "+user_name+", password is ");
 
