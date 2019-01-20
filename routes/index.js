@@ -28,7 +28,8 @@ router.post('/start/:id',function(req,res){
   // var user_name=req.body.ui;
   var user_name = req.params.id
 
-console.log(req.body)
+console.log(user_name)
+
 str = JSON.stringify(req.body);
 str = JSON.stringify(req.body, null, 4); // (Optional) beautiful indented output.
 console.log(str);
