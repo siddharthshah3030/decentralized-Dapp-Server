@@ -24,7 +24,7 @@ router.post('/start',function(req,res){
   var user_name=req.body.ui;
   console.log(user_name)
   //  user_name=req.tempBody.userid;
-   voter.findById(userid, function (err, voter) {
+   voter.findById(user_name, function (err, voter) {
     campaign.findOne({ name: voter.region }, function (err, location) {
         var str = "";
         var int = 1;
@@ -58,7 +58,7 @@ router.post('/vote',function(req,res){
   //     userid : "5c4244d5b1a3cc0e3c904cec"
   // }
   // console.log(req.body);
-  var button = req.body.party_id;
+  var button = req.body.button;
   button = 3;
   voter.findById(userid, function (err, voter) {
       var voterId = voter.identity
@@ -88,7 +88,7 @@ router.post('/vote',function(req,res){
   //     //your code to be executed after 1 second
   //   }, 10000);
   // console.log("User name = "+user_name+", password is "+password);
-  res.end("new yes");
+  res.end("vote submitted successfully, please wait for transaction confirmation");
 });
 
 
