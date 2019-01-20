@@ -113,7 +113,7 @@ console.log(str);
         // console.log("iuchniu")
     });
   } else{
-    res.send("incorrect post request")
+    res.send("incorrect get request")
   }
   // var password=req.body.password;
   console.log("User name = "+user_name+", password is ");
