@@ -18,17 +18,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:id', function(req, res, next) {
-  Elections.deployed().then(function(instance) {
-    var electionInstance = instance;
-    const accounts = web3.eth.getAccounts();//todo: promise
-    return electionInstance.getSuperChairperson.call();
-  }).then(function(response) {
-    console.log(response);
-  }).catch(function(err) {
-    console.log(err.message);
-  });
-  console.log(res.render('index', { title: 'Express' }));
-  res.render('index', { title: 'Express' });
+  var user_name = req.params.id
+  console.log(user_name)
+  res.end("congrats nag");
 });
 
 
