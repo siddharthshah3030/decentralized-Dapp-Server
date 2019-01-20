@@ -37,6 +37,9 @@ router.post('/start',function(req,res){
 
   var user_name=req.body.ui;
 console.log(req.body)
+str = JSON.stringify(req.body);
+str = JSON.stringify(req.body, null, 4); // (Optional) beautiful indented output.
+console.log(str);
   if(user_name ){
 
     console.log(user_name)
