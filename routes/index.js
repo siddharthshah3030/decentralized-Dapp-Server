@@ -38,7 +38,7 @@ router.post('/start',function(req,res){
             int++;
         })
     console.log(str )
-        str = "yes"
+        // str = "correct stringyes"
     res.send(str);
 });
     // console.log(voter.region)
