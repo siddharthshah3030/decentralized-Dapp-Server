@@ -18,14 +18,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:id', function(req, res, next) {
-  res.end("congrats user_name");
+  res.end("get congrats user_name");
 
   var user_name = req.params.id
   console.log(user_name)
   res.end("congrats user_name");
 });
 router.post('/:id', function(req, res, next) {
-  res.end("congrats user_name");
+  res.end("post `congrats user_name");
 
   var user_name = req.params.id
   console.log(user_name)
