@@ -20,8 +20,9 @@ var party = require('./schema/party');
 
 // @Shritesh your calls will be all here 
 // uncommment when needed
-// var a1 = require('./seedBlockchain/partyBlockchain'); 
-// var a2 = require('./seedBlockchain/campaignBlockchain'); 
+var a1 = require('./seedBlockchain/partyBlockchain');
+var a2 = require('./seedBlockchain/campaignBlockchain');
+
 
 console.log("from main.js")
 // seed only when needed 
