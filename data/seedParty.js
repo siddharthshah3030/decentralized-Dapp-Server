@@ -36,7 +36,7 @@ var symbol = [
 
 function makeid() {
   var text = "";
-  var possible = "abcdef0123456789";
+  var possible = "0123456789";
 
   for (var i = 0; i < 40; i++)
     text += possible.charAt(Math.floor(Math.random() * possible.length));

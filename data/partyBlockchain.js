@@ -9,14 +9,14 @@ party.find({}, function(err, currentParty) {
             var electionInstance = instance;
             return web3.eth.getAccounts()
                 .then(function (accounts) {
+                    console.log(accounts)
                     return electionInstance
-                        .addParty(currentParty.identity)
-                        .send({
-                           from: accounts[0]
-                        });
+                        .addParty(partyInstance.identity,{from:accounts[0]})
             });
         })
-        console.log(partyInstance)
+        
 
     });
 });
+
+
