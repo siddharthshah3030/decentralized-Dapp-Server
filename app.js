@@ -14,6 +14,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 var results = require('./data/result');
+var mainData = require('./data/main');
+
 
 app.use(logger('dev'));
 app.use(express.json());
