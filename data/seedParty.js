@@ -53,7 +53,7 @@ for(var i=0;i<10;i++){
          name : parties[i],
          abb : abbParties[i],
 
-         identity : makeid()
+         identity : i+100
 })
 
         console.log(party)

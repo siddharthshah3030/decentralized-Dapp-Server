@@ -20,7 +20,7 @@ var party = require('./schema/party');
 
 // @Shritesh your calls will be all here 
 // uncommment when needed
-var a1 = require('./partyBlockchain');
+// var a1 = require('./partyBlockchain');
 // var a2 = require('./campaignBlockchain');
 
 
