@@ -1,5 +1,5 @@
 console.log("from block chain party")
-var Elections = require('../etherum/elections');
+var Elections = require("../etherum/elections");
 var web3 = require('../etherum/web3');
 
 party.find({}, function(err, currentParty) {
@@ -15,9 +15,8 @@ party.find({}, function(err, currentParty) {
                            from: accounts[0]
                         });
             });
-        }
+        })
         console.log(partyInstance)
 
     });
-}
-);
+});

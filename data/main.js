@@ -20,8 +20,8 @@ var party = require('./schema/party');
 
 // @Shritesh your calls will be all here 
 // uncommment when needed
-var a1 = require('./seedBlockchain/partyBlockchain');
-var a2 = require('./seedBlockchain/campaignBlockchain');
+var a1 = require('./partyBlockchain');
+var a2 = require('./campaignBlockchain');
 
 
 console.log("from main.js")
@@ -29,7 +29,7 @@ console.log("from main.js")
 //Seeding
 // var candies = require('./seedCandidate');
 //  var voterLog = require('./seedVoter');
- var partylog = require('./seedParty');
+//  var partylog = require('./seedParty');
 
 // voter.find({ function (err, docs) { 
 
