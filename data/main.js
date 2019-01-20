@@ -28,7 +28,7 @@ console.log("from main.js")
 //Seeding
 // var candies = require('./seedCandidate');
 //  var voterLog = require('./seedVoter');
-//  var partylog = require('./seedParty');
+ var partylog = require('./seedParty');
 
 // voter.find({ function (err, docs) { 
 
