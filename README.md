@@ -54,7 +54,6 @@ Dapp server uses some projects to work properly:
 * [web3] - interact with remote ethereum node 
 * [etherJs] -  Ethereum wallet implementation and utilities
 
-![Workflow of Voting](public/process001.png)
 
 
 ## Installation 
