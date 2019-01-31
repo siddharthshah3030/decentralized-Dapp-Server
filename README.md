@@ -1,21 +1,21 @@
 # Smart Elections
-#### project by team Pro at I_HACK Hackathon E-Summit'19 IIT Bombay
+#### Project by Team Pro at I_HACK Hackathon E-Summit'19 IIT Bombay
 ### This repository **decentralized-Dapp-Server** is main server for Smart Contract, API, Database, UI-Result
 
 Smart Elections is a voting system based on Decentralised Ethereum Blockchain Network. An attempt to improve India's current election system using Ethereum Blockchain Network.
 
   - NO more Biasing in votes
-  -  the authenticity to every voter and candidate via Smart Transaction
-  - votes are decentralized and distributed across a peer-to-peer network for security
+  -  The authenticity to every voter and candidate via Smart Transaction
+  - Votes are decentralized and distributed across a peer-to-peer network for security
 
-## problem statement:
+## Problem statement:
 > **India's EVMs are Vulnerable to Fraud**
-> a research [article](https://indiaevm.org/qa.html) have claimed many ways to temper vote.
+> A research [article](https://indiaevm.org/qa.html) have claimed many ways to temper vote.
 
 > **The question arises - why we even do voting in India?**
-> some temper proof solution needs to be made for secure and fair Elections and Voting,
-> so that user is sure their vote is not being tempered,
-> we came up with this great solution  
+> Some temper proof solution needs to be made for secure and fair Elections and Voting,
+> So that user is sure their vote is not being tempered,
+> We came up with this great solution  
 
 
 Our project uses Blockchain and Smart Etherum contracts to make sure each and every vote is being stored peer to peer in a decentralized network with Hashing so that every vote is secured and elections are fair
@@ -23,7 +23,7 @@ Our project uses Blockchain and Smart Etherum contracts to make sure each and ev
 ## Simple Steps :
  1)  **Verify User** - Use some Biometric user verification (currently not implemeneted)
  2)  **Take Vote** - Take vote via IOT devce based on rasberry Pi 3 
-  3)  **Make Smart Contract** - Store the vote via Smart-Contract in Etherum network 
+ 3)  **Make Smart Contract** - Store the vote via Smart-Contract in Etherum network 
  4)  **Results** - Count the total votes in network 
 
 
@@ -49,16 +49,16 @@ Being a large and team project there are multiple repositories for individual st
 ## Tech
 
 Dapp server uses some projects to work properly:
-* [mongoose] - object modelling and handling
-* [faker] - generating dummy data
-* [web3] - interact with remote ethereum node 
-* [etherJs] -  Ethereum wallet implementation and utilities
+* [Mongoose] - Object modelling and handling
+* [Faker] - Generating dummy data
+* [Web3] - Interact with remote ethereum node 
+* [EtherJs] -  Ethereum wallet implementation and utilities
 
 
 
 ## Installation 
 
-(this repository and main server)
+(This repository and main server)
 Install the dependencies and start the server.
 ```sh
 $ cd decentralized-Dapp-Server
@@ -67,8 +67,8 @@ $ yarn start
 ```
 ## Development
 
- -  the data-base is connected to Mlabs and already seeded
-to seed the database just run the below files
+ -  The data-base is connected to Mlabs and already seeded
+To seed the database just run the below files
     ```sh
     data/seedParty.js
     data/seedVoter.js
@@ -76,9 +76,9 @@ to seed the database just run the below files
     ```
     OR 
     use data/main.js and uncomment line 30,31,32 (recommended)
-- you will need connection and addresses for etherum network too
+- You will need connection and addresses for etherum network too
     check [this](https://github.com/Shritesh99/Smart-Elections_Solidity) for info 
-- a UI or IOT to take input and make server call (check [this](https://github.com/utkarshchandrakar/Smart_elections_rasp) for IOT)
+- A UI or IOT to take input and make server call (check [this](https://github.com/utkarshchandrakar/Smart_elections_rasp) for IOT)
 ### Contribute
 
 Want to contribute? Great!
