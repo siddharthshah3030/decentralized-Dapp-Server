@@ -1,4 +1,5 @@
 # Smart Elections
+## A Blockchain based solution for temperproof elections.
 #### Project by Team Pro at I_HACK Hackathon E-Summit'19 IIT Bombay
 ### This repository **decentralized-Dapp-Server** is main server for Smart Contract, API, Database, UI-Result
 
